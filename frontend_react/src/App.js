@@ -45,8 +45,8 @@ function App() {
 
     const url =
       chosenSec === "vulnerable"
-        ? "http://localhost:8000/getUserVulnerable"
-        : "http://localhost:8000/getUserSecure";
+        ? "https://dujejuric-web2-projekt2-backend.onrender.com/getUserVulnerable"
+        : "https://dujejuric-web2-projekt2-backend.onrender.com/getUserSecure";
 
     const response = await fetch(url, {
       method: "POST",
@@ -77,7 +77,7 @@ function App() {
     }
 
     const response = await fetch(
-      "http://localhost:8000/getUserBruteForceExample",
+      "https://dujejuric-web2-projekt2-backend.onrender.com/getUserBruteForceExample",
       {
         method: "POST",
         headers: {
