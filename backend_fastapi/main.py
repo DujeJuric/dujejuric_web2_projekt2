@@ -14,6 +14,7 @@ app = FastAPI()
 origins = [
     "http://localhost:8000",
     "http://localhost:3000",
+    "https://dujejuric-web2-projekt2.onrender.com"
 ]
 
 app.add_middleware(
